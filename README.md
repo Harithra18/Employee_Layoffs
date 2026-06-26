@@ -1,29 +1,35 @@
-# Mental Health & Burnout Analysis — Python Project
+# Tech Industry Layoffs Analysis — Python Project
 
 ## Overview
-Analysed employee mental health and burnout dataset with 100,000+ records 
-to identify stress patterns, burnout levels, and job satisfaction trends 
-across multiple job roles using Python.
+Performed Exploratory Data Analysis (EDA) on a tech industry layoffs 
+dataset to identify layoff patterns, detect outliers, and classify 
+companies by risk level using Python.
 
 ## Tools & Technologies
-- Python
-- Pandas & NumPy — Data cleaning, preprocessing, aggregation
+- Python (Google Colab)
+- Pandas & NumPy — Data cleaning, preprocessing, null handling
 - Matplotlib & Seaborn — Data visualisation
-- Google Colab — Development environment
+- IQR Method — Outlier detection and treatment
 
 ## Key Analysis Performed
-- Cleaned and preprocessed 100,000+ employee records
-- Analysed salary, stress score, burnout level across job roles
-- Used grouping, pivot tables, and aggregation to derive insights
-- Identified mental health trends across departments and age groups
-- Developed visualisations to present burnout patterns clearly
+- Loaded and explored layoffs dataset (shape, columns, null values)
+- Handled missing values in total_laid_off and percentage_laid_off
+- Detected outliers using IQR (Interquartile Range) method
+- Classified companies into Low / Normal / High risk levels based 
+  on layoff numbers
+- Visualised layoff distribution by risk level using Seaborn boxplot
+- Removed outliers using clipping method for clean analysis
+- Exported final cleaned dataset as cleanedlayoffs_data.csv
 
 ## Project Files
 - `layoffs.ipynb` — Complete Python analysis notebook
+- `cleanedlayoffs_data.csv` — Cleaned output dataset
 
 ## Dataset
-Employee mental health and burnout dataset
-Records: 100,000+
+Tech industry layoffs data containing company-wise layoff numbers 
+and percentage of workforce laid off
 
 ## Skills Demonstrated
-Python · Pandas · NumPy · Matplotlib · Seaborn · EDA · Data Cleaning · Statistical Analysis
+Python · Pandas · NumPy · Matplotlib · Seaborn · EDA · 
+Data Cleaning · Outlier Detection · Statistical Analysis · 
+Risk Classification
